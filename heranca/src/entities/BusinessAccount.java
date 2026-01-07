@@ -1,14 +1,14 @@
 
 package entities;
 
-public class businessAcount extends Account {
+public class BusinessAccount extends Account {
 
 	private Double loanLimit;
 
-	public businessAcount() {
+	public BusinessAccount() {
 	}
 
-	public businessAcount(Integer number, String name, Double balance, Double loanLimit) {
+	public BusinessAccount(Integer number, String name, Double balance, Double loanLimit) {
 		super(number, name, balance);
 		this.loanLimit = loanLimit;
 	}

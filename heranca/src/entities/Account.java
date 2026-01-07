@@ -3,15 +3,15 @@ package entities;
 public class Account {
 
 	private Integer number;
-	private String name;
+	private String holder;
 	protected Double balance;
-	
+		
 	public Account() {
 	}
-
-	public Account(Integer number, String name, Double balance) {
+	
+	public Account(Integer number, String holder, Double balance) {
 		this.number = number;
-		this.name = name;
+		this.holder = holder;
 		this.balance = balance;
 	}
 
@@ -19,31 +19,27 @@ public class Account {
 		return number;
 	}
 
-	public String getName() {
-		return name;
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
+
+	public String getHolder() {
+		return holder;
+	}
+
+	public void setHolder(String holder) {
+		this.holder = holder;
 	}
 
 	public Double getBalance() {
 		return balance;
 	}
 
-	public void setNumber(Integer number) {
-		this.number = number;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void withdraw(Double amount) {
+	public void withdraw(double amount) {
 		balance -= amount;
 	}
-	
-	public void deposit(Double amount) {
+
+	public void deposit(double amount) {
 		balance += amount;
 	}
-	
-	
-	
-	
 }
